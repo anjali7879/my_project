@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anju</title>
+    <link  rel="stylesheet"   href="css/style.css">
+    <link  rel="stylesheet"   href="css/jquery.convform.css">
+    <script type="text/javascript" src="Js/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="Js/jquery.convform.js"></script>
+    <script type="text/javascript" src="Js/script.js"></script>
+</head>
+<body>
+
+    <div class="hero">
+      <video autoplay muted loop id="myVideo">
+         <source src="Dna.mp4" type="video/mp4">
+
+       </video>
+       
+      <nav>
+         <img src="logo.png" alt="">
+         <ul>
+            <li><a href="#">Health Conditions</a></li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Signin</a></li>
+         </ul>
+      </nav>
+      <div class="content">
+         <h1 class="h1">Concern+</h1>
+         
+         
+      </div>
+      <div class="chatbox">
+         <div class="c">
+            <h2 class="b">Welcome to Concern</h2>
+       </div>
+         <div class="chatbot">
+            
+            <div id="chat" class="conv-wrapper-form">
+               <form action="" method="get" class="hidden">
+                  <select name="programmer" data-conv-question="So, are you a programmer? (this question will fork the conversation based on your answer)">
+                     <option value="yes">Yes</option>
+                     <option value="no">No</option>
+                  </select>
+                  <div data-conv-fork="programmer">
+                     <div data-conv-case="yes">
+                        <input type="text" data-conv-question="A fellow programmer! Cool." data-no-answer="true">
+                     </div>
+                     <div data-conv-case="no">
+                        <select name="thought" data-conv-question="Have you ever thought about learning? Programming is fun!">
+                           <option value="yes">Yes</option>
+                           <option value="no">No..</option>
+                        </select>
+                     </div>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="pagetwo">
+      <h3>jjjj</h3>
+
+   </div>
+ 
+ </body>
+</html>
